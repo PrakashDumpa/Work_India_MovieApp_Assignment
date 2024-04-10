@@ -8,11 +8,13 @@ const MovieCardItem = ({ EachMovieItem }) => {
   return (
     <li className="text-center card_Container  mb-3">
       <Link to={`/${id}`} className="nav-link text-secondary p-1">
-        <img
-          className="posterSize"
-          src={`${imageUrl}${poster_path}`}
-          alt={title}
-        />
+        <div className="posterSize">
+          <img
+            className="h-100"
+            src={`${imageUrl}${poster_path}`}
+            alt={title}
+          />
+        </div>
         <p className="m-0">{title}</p>
         <p className="">Rating: {vote_average.toFixed(1)}</p>
       </Link>

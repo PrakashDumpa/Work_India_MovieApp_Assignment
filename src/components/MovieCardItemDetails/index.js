@@ -90,11 +90,13 @@ const MovieCardItemDetails = () => {
           <div className="d-flex  flex-column text-light">
             <div className="d-flex flex-column flex-md-row">
               <div className="text-center">
-                <img
-                  className="posterImage"
-                  src={`${imageUrl}${poster_path}`}
-                  alt={original_title}
-                />
+                <div className="posterImage">
+                  <img
+                    className="posterImage"
+                    src={`${imageUrl}${poster_path}`}
+                    alt={original_title}
+                  />
+                </div>
               </div>
               <div className="ml-3">
                 <h1 className="h3 mb-3">{original_title}</h1>
@@ -112,7 +114,7 @@ const MovieCardItemDetails = () => {
                 <h1 className="h5">Release Date : {release_date}</h1>
               </div>
             </div>
-            <div>
+            <div className="pt-3">
               <h1 className="h4">OverView</h1>
               <p>{overview}</p>
             </div>
