@@ -1,0 +1,17 @@
+.home_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie_list_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .movie_list_container {
+    justify-content: space-between;
+    /* background: red; */
+  }
+}

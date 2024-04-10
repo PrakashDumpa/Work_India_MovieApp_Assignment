@@ -1,0 +1,19 @@
+.posterSize {
+  height: 350px;
+  width: 100%;
+}
+.card_Container {
+  width: 280px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 575px) {
+  .card_Container {
+    width: 160px;
+    font-size: 16px;
+  }
+  .posterSize {
+    height: 200px;
+  }
+}
