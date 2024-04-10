@@ -10,7 +10,7 @@ const MovieCardItem = ({ EachMovieItem }) => {
       <Link to={`/${id}`} className="nav-link text-secondary p-1">
         <div className="posterSize">
           <img
-            className="h-100"
+            className="h-100 rounded"
             src={`${imageUrl}${poster_path}`}
             alt={title}
           />
